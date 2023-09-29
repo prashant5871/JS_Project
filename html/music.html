@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="volume-indicator-plus"><i class="fa-solid fa-volume-high"></i></div>
+            <div id="volume-indicator-minus"><i class="fa-solid fa-volume-low"></i></div>
+            <h2 id="title">ramaiya vastavaiya</h2>
+            <h3 id="artist">Anirudh Ravichander, Vishal Dadlani and Shilpa Rao</h3>
+
+            <div class="image-container">
+                <img src="../images/disc.png">
+            </div>
+
+            <audio src="../music/music-2.mp3"></audio>
+
+            <div class="progressbar_container">
+                <div class="duration_meter">
+                    <div class="current_time" id="current_time">0:00</div>
+                    <div class="duration" id="duration">3:42</div>
+                </div>
+                <div class="progress_bar" id="progress_bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <div class="music-controls">
+                <i class="fa-solid fa-backward-fast" id="prev" title="Previous"></i>
+                <div class="play_button">
+                    <i class="fa-solid fa-play" id="play" title="Pause"></i>
+                </div>
+                <i class="fa-solid fa-forward-fast" id="next" title="Next"></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6a5a30860f.js" crossorigin="anonymous"></script>
+    <script src="../js/music.js"></script>
+</body>
+</html>
