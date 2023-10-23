@@ -54,7 +54,7 @@ let size = songs.length;
 const nextsong = () => {
     play.classList.replace('fa-pause', 'fa-play');
     index++;
-    audio.src = `../music/${songs[index % size].name}`;
+    audio.src = `music/${songs[index % size].name}`;
     title.innerHTML = songs[index % size].title;
     artist.innerHTML = songs[index % size].artist;
     image.classList.add('anime');
@@ -65,7 +65,7 @@ const nextsong = () => {
 const prevsong = () => {
     play.classList.replace('fa-pause', 'fa-play');
     index = (index + size - 1) % size;
-    audio.src = `../music/${songs[index].name}`;
+    audio.src = `music/${songs[index].name}`;
     title.innerHTML = songs[index].title;
     artist.innerHTML = songs[index].artist;
     image.classList.add('anime');
