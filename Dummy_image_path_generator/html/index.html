@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Image Generator</title>
+</head>
+
+<body>
+    <h1>Image Generator</h1>
+    <div class="container">
+        <div class="input_field">
+            <label for="BoxSize">Size of Box : </label>
+            <select name="box_size" id="BoxSize">
+                <option value="1x1">Select Option</option>
+                <option value="100x100">Small Square(100x100)</option>
+                <option value="200x200">Median Square(300x300)</option>
+                <option value="200x300">Median box(300x400)</option>
+                <option value="300x300">Square(400x400)</option>
+                <option value="600x400">Large(600x400)</option>
+            </select>
+        </div>
+
+        <div class="input_field">
+            <label for="BgClr">Background Color : </label>
+            <input type="color" value="#9b59b6" name="BgClr" id="BgClr">
+        </div>
+        <div class="input_field">
+            <label for="Clr">Text Color : </label>
+            <input type="color" value="#2c3e50" name="Clr" id="Clr">
+        </div>
+        <div class="input_field">
+            <label for="txt">Text : </label>
+            <input type="text" name="txt" id="txt">
+        </div>
+        <div id="image">
+            <img src="">
+        </div>
+
+        <div class="url">
+            <textarea cols="70" rows="2">Link will be shown here</textarea>
+        </div>
+
+        <script src="../js/index.js"></script>
+</body>
+
+</html>
