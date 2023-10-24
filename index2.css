@@ -31,6 +31,7 @@ body::before{
 
 
 .navbar{
+    padding: .3rem;
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
@@ -39,7 +40,7 @@ body::before{
 }
 
 .web-name{
-    font-size: 2rem;
+    font-size: 1.3rem;
     width:20%;
     /* border: 1px solid white; */
     text-align: center;
@@ -68,9 +69,9 @@ body::before{
 
 .btn{
     display: inline-block;
-    padding: 5px 20px;
+    padding: .1rem .2rem;
     /* Adjust padding for button size */
-    font-size: 16px;
+    font-size: 1rem;
     /* Adjust font size */
     font-weight: bold;
     text-align: center;
@@ -113,6 +114,7 @@ body::before{
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
     /* Add a subtle box-shadow on focus */
 }
+
 /* ---------navbar end----------- */
 
 /* Stylish Button Styles */
@@ -216,7 +218,7 @@ h1{
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 5rem;
+      font-size: 4rem;
 }
 
 @keyframes textclip {
