@@ -24,7 +24,7 @@ let prev = document.querySelector('#prev');
 let next = document.querySelector('#next');
 
 const PlaySong = () => {
-    play.classList.replace('fa-pause', 'fa-play');
+    play.classList.replace('fa-play', 'fa-pause');
     audio.play();
     IsPlaying = true;
     image.classList.add('anime');
@@ -32,7 +32,7 @@ const PlaySong = () => {
 }
 
 const PauseSong = () => {
-    play.classList.replace('fa-play', 'fa-pause');
+    play.classList.replace('fa-pause', 'fa-play');
     audio.pause();
     IsPlaying = false;
     image.classList.remove('anime');
@@ -52,7 +52,7 @@ let size = songs.length;
 
 
 const nextsong = () => {
-    play.classList.replace('fa-pause', 'fa-play');
+    play.classList.replace('fa-play', 'fa-pause');
     index++;
     audio.src = `music/${songs[index % size].name}`;
     title.innerHTML = songs[index % size].title;
@@ -63,7 +63,7 @@ const nextsong = () => {
 }
 
 const prevsong = () => {
-    play.classList.replace('fa-pause', 'fa-play');
+    play.classList.replace('fa-play', 'fa-pause');
     index = (index + size - 1) % size;
     audio.src = `music/${songs[index].name}`;
     title.innerHTML = songs[index].title;
